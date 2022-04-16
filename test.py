@@ -1,10 +1,8 @@
-words={"a", "b", "c","e"}
-nummers={1,12,33,5,6,77}
-def methode(word):
-     multi= 2*word
-     return multi/2-1
-     
-erg= [ methode(word) for word in nummers]
-print(erg)
-
-        
+class newclass():
+     class_variable=3
+     def methode(self, attibutte):
+          self.class_variable=attibutte
+          return self.class_variable*2
+projekt= newclass()
+l=projekt.methode(28)
+print(l)
